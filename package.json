@@ -3,6 +3,7 @@
   "displayName": "Funcy Lang",
   "description": "This extension provides syntax highlighting for the Funcy programming language.",
   "version": "0.0.1",
+  "publisher": "peter-vanderhyde",
   "engines": {
     "vscode": "^1.92.0"
   },

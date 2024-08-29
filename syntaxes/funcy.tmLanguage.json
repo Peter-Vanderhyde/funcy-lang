@@ -2,31 +2,122 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Funcy",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+		{"include": "#keywords"},
+		{"include": "#strings"},
+		{"include": "#comments"},
+		{"include": "#block-comments"},
+		{"include": "#numbers"},
+		{"include": "#functions"},
+		{"include": "#booleans"},
+		{"include": "#variables"}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
+		  	"patterns": [
+				{
 				"name": "keyword.control.funcy",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+				"match": "\\b(if|else|elif|while|for|in|break|continue|return|import|and|or|not)\\b"
+				},
+				{
+				"name": "storage.type.funcy",
+				"match": "\\b(Integer|Float|String|Boolean|List|Function|BuiltInFunction|Null)\\b"
+				},
+				{
+				"name": "keyword.declaration.funcy",
+				"match": "\\bfunc\\b"
+				}
+		  	]
 		},
 		"strings": {
-			"name": "string.quoted.double.funcy",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.funcy",
-					"match": "\\\\."
+					"name": "string.quoted.double.funcy",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.funcy",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.funcy",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.funcy",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
-		}
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.funcy",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*\\()"
+				}
+			]
+		},
+		"comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.number-sign.funcy",
+                    "begin": "#",
+                    "end": "$"
+                }
+            ]
+        },
+		"block-comments": {
+            "patterns": [
+                {
+                    "name": "comment.block.funcy",
+                    "begin": "/\\*",
+                    "end": "\\*/",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.begin.funcy"
+                        }
+                    },
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.end.funcy"
+                        }
+                    }
+                }
+            ]
+        },
+		"numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.integer.funcy",
+                    "match": "\\b\\d+\\b"
+                },
+                {
+                    "name": "constant.numeric.float.funcy",
+                    "match": "\\b\\d+\\.\\d+\\b"
+                }
+            ]
+        },
+        "booleans": {
+            "patterns": [
+                {
+                    "name": "constant.language.boolean.funcy",
+                    "match": "\\b(true|false)\\b"
+                }
+            ]
+        },
+		"variables": {
+            "patterns": [
+                {
+                    "name": "variable.other.funcy",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+                }
+            ]
+        }
 	},
 	"scopeName": "source.funcy"
 }
