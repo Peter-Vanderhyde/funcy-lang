@@ -13,7 +13,7 @@ The syntax highlighting includes:
 - Variables
 - Functions
 
-<img src="images/example.png" alt="example" style="border: 2px solid gray; border-radius: 8px;"/>
+![example](images/example.png)
 
 ## Installing
 In order to use this extension, you must first package the extension and then apply it in VSCode.
