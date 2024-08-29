@@ -1,0 +1,25 @@
+{
+  "name": "funcy-lang",
+  "displayName": "Funcy Lang",
+  "description": "This extension provides syntax highlighting for the Funcy programming language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "funcy",
+      "aliases": ["Funcy", "funcy"],
+      "extensions": [".funcy"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "funcy",
+      "scopeName": "source.funcy",
+      "path": "./syntaxes/funcy.tmLanguage.json"
+    }]
+  }
+}
