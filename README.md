@@ -13,7 +13,7 @@ The syntax highlighting includes:
 - Variables
 - Functions
 
-![example](images/example.png)
+![example](https://github.com/user-attachments/assets/b6ebd925-b6df-47db-9fc0-11ddf36679b1)
 
 ## Installing
 In order to use this extension, you must first package the extension and then apply it in VSCode.
