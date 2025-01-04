@@ -24,7 +24,7 @@
 				},
 				{
 				"name": "keyword.declaration.funcy",
-				"match": "\\bfunc\\b"
+				"match": "\\b(func|class)\\b"
 				}
 		  	]
 		},
