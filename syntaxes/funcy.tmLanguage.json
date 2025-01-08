@@ -21,7 +21,7 @@
 				},
 				{
 					"name": "storage.type.funcy",
-					"match": "\\b(Integer|Float|String|Boolean|List|Function|BuiltInFunction|Null)\\b"
+					"match": "\\b(Integer|Float|String|Boolean|List|Function|BuiltInFunction|Null|Class|Instance)\\b"
 				},
 				{
 					"name": "keyword.declaration.funcy",
