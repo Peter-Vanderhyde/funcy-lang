@@ -17,7 +17,7 @@
 		  	"patterns": [
 				{
 					"name": "keyword.control.funcy",
-					"match": "\\b(if|else|elif|while|for|in|break|continue|return|import|and|or|not|global)\\b"
+					"match": "\\b(if|else|elif|while|for|in|break|continue|return|import|and|or|not|global|throw)\\b"
 				},
 				{
 					"name": "storage.type.funcy",
