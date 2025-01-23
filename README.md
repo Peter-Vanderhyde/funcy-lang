@@ -13,6 +13,9 @@ The syntax highlighting includes:
 - Variables
 - Functions
 
+![image](https://github.com/user-attachments/assets/c6a1031b-0bbf-4311-a682-8694adcd0923)
+
+
 ## Installing
 
 You can either download the pre-packaged `.vsix` file and apply it in VSCode, or package the extension yourself using `vsce`. Follow the instructions below for your preferred method.
