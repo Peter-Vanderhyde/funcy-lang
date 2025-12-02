@@ -1,7 +1,7 @@
 {
   "name": "funcy-lang",
   "displayName": "Funcy Lang",
-  "description": "This extension provides syntax highlighting for the Funcy programming language.",
+  "description": "Provides syntax highlighting for the Funcy programming language.",
   "version": "1.0.0",
   "publisher": "peter-vanderhyde",
   "icon": "icon.png",

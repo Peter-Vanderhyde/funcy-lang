@@ -1,6 +1,6 @@
 # Funcy Syntax Highlighting Extension for Visual Studio Code
 
-This extension provides syntax highlighting for the Funcy programming language. Funcy is a Python-inspired scripting language designed for simplicity, flexibility, and logical coding.
+Provides syntax highlighting for the Funcy programming language. Funcy is a Python-inspired scripting language designed for simplicity, flexibility, and logical coding.
 
 ## Features
 
