@@ -58,7 +58,7 @@ If you'd like to package the extension from source, follow these steps:
    ```bash
     vsce package
     ```
-    The command will generate a `.vsix` file (e.g., `funcy-lang-0.0.x.vsix`) in the same directory.
+    The command will generate a `.vsix` file (e.g., `funcy-lang-1.0.x.vsix`) in the same directory.
 
 #### 3. Install the Packaged Extension
 
