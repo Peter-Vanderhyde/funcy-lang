@@ -22,10 +22,12 @@
       "extensions": [".fy"],
       "configuration": "./language-configuration.json"
     }],
-    "grammars": [{
-      "language": "funcy",
-      "scopeName": "source.funcy",
-      "path": "./syntaxes/funcy.tmLanguage.json"
-    }]
+    "grammars": [
+      {
+        "language": "funcy",
+        "scopeName": "source.funcy",
+        "path": "./syntaxes/funcy.tmLanguage.json"
+      }
+    ]
   }
 }
